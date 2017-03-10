@@ -1,4 +1,4 @@
-{% set version = "4.0.2" %}
+{% set version = "4.1.0" %}
 
 package:
     name: qutip
@@ -7,12 +7,11 @@ package:
 source:
     fn: qutip-{{ version }}.tar.gz
     url: http://qutip.org/downloads/{{ version }}/qutip-{{ version }}.tar.gz
-    sha256: 5629b24e568f7b77debd42eda6eed44c34463e6a78d8511d02d6df3d7689a030
+    sha256: 0549b5c049083a954e21d0389d3bee4dae4cb396a94af3a3545cae77065e8aea
 
 build:
-    number: 1
+    number: 0
     script: $PYTHON setup.py install  # [unix]
-    skip: True                        # [win and py35]
 
 requirements:
   build:
@@ -21,7 +20,7 @@ requirements:
     - cython >=0.21
     - numpy x.x
     - scipy >=0.15
-    - mingwpy                         # [win]
+    - mingwpy                         # [win and (py2 or py34)]
     
   run:
     - python
@@ -29,7 +28,7 @@ requirements:
     - numpy x.x
     - scipy >=0.15
     - cython >=0.21
-    - mingwpy                         # [win]
+    - mingwpy                         # [win and (py2 or py34)]
     
 test:
   imports:
