@@ -20,7 +20,7 @@ requirements:
     - cython >=0.21
     - numpy x.x
     - scipy >=0.15
-    - mingwpy                         # [win and (py2 or py34)]
+    - mingwpy                         # [win and (py2k or py34)]
     
   run:
     - python
@@ -28,7 +28,7 @@ requirements:
     - numpy x.x
     - scipy >=0.15
     - cython >=0.21
-    - mingwpy                         # [win and (py2 or py34)]
+    - mingwpy                         # [win and (py2k or py34)]
     
 test:
   imports:
