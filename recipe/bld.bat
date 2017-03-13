@@ -1,7 +1,7 @@
 set MING=0
 echo CONDA_PY "%CONDA_PY%"
-if "%CONDA_PY%"==27 set MING=1
-if "%CONDA_PY%"==34 set MING=1
+if "%CONDA_PY%"=="27" set MING=1
+if "%CONDA_PY%"=="34" set MING=1
 
 if %MING%==1 (
     echo using mingw compiler

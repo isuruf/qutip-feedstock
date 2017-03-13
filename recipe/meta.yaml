@@ -17,8 +17,8 @@ requirements:
   build:
     - python
     - setuptools
-    - cython >=0.21
     - numpy x.x
+    - cython >=0.21
     - scipy >=0.15
     - mingwpy                         # [win and (py2k or py34)]
     
