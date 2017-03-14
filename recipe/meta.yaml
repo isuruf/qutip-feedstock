@@ -21,6 +21,7 @@ requirements:
     - cython >=0.21
     - scipy >=0.15
     - mingwpy                         # [win and (py2k or py34)]
+    - toolchain
     
   run:
     - python
