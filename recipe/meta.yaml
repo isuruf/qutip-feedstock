@@ -8,6 +8,8 @@ source:
     fn: qutip-{{ version }}.tar.gz
     url: http://qutip.org/downloads/{{ version }}/qutip-{{ version }}.tar.gz
     sha256: f0b973aa22844989cfe04c45ce42854a95f8fc8546213b9a7082b66e1f9a9e9d
+    patches:
+      - sort.patch
 
 build:
     number: 0
