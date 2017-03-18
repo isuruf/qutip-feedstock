@@ -106,6 +106,7 @@ install:
     - cmd: conda install -n root --quiet --yes obvious-ci
     - cmd: conda install -n root --quiet --yes conda-forge-build-setup
     - cmd: run_conda_forge_build_setup
+    - cmd: conda install -n root --quiet --yes conda-build=2.1.6
 
 # Skip .NET project specific build phase.
 build: off
