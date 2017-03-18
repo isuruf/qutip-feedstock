@@ -2,6 +2,9 @@ set MING=0
 echo CONDA_PY "%CONDA_PY%"
 if "%CONDA_PY%"=="27" set MING=1
 
+echo "NUMBER_OF_PROCESSORS"
+echo %NUMBER_OF_PROCESSORS%
+
 if %MING%==1 (
     echo using mingw compiler
     "%PYTHON%" setup.py build --compiler=mingw32

@@ -111,6 +111,8 @@ install:
 build: off
 
 test_script:
+    - echo "NUMBER_OF_PROCESSORS"
+    - echo %NUMBER_OF_PROCESSORS%
     - "%CMD_IN_ENV% conda build recipe --quiet"
 deploy_script:
     - cmd: upload_or_check_non_existence .\recipe conda-forge --channel=main
