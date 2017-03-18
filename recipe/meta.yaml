@@ -35,8 +35,9 @@ requirements:
     - mingwpy                         # [win and py2k]
     
 test:
-  imports:
-    - qutip
+  commands:
+    - echo "NUMBER_OF_PROCESSORS"
+    - echo "%NUMBER_OF_PROCESSORS%"
 
 about:
     home: http://qutip.org
